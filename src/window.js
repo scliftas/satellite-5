@@ -15,6 +15,7 @@ app.on('ready', () => {
         enableRemoteModule: false,
         plugins: true,
         partition: 'persist:satellite-5',
+        webviewTag: true,
     },
   });
 });

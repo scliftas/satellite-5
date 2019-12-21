@@ -3,24 +3,17 @@
   <head>
     <title>Netflix</title>
   </head>
-  <body style="overflow:hidden;">
+  <body style="overflow:hidden;width:100%;height:100%;">
     <script>
       const webview = document.createElement('webview');
 
-      function load() {
-        console.log('Test');
-        webview.removeEventListener('did-finish-load', load);
-        webview.setAttribute('preload', './play.js');
-        webview.setAttribute('src', `https://www.netflix.com/search${window.location.search}`);
-        webview.style = 'position:absolute;width:100%;height:100%;';
-        document.body.appendChild(webview);
-      };
+      webview.setAttribute('src', `https://www.netflix.com/search${window.location.search}`);
+      webview.style = 'position:absolute;width:100%;height:100%;';
+      document.body.appendChild(webview);
 
-      webview.addEventListener('did-finish-load', load);
-
-      load();
-    </script>
-    <script>
+      webview.addEventListener('dom-ready', () => {
+        webview.executeJavascript("document.querySelector('div.slider-refocus').click();document.querySelector('a.title-card-play').click();");
+      });
     </script>
   </body>
 </html>
