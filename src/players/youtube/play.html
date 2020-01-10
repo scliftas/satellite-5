@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube</title>
+  </head>
+  <body style="overflow:hidden;width:100%;height:100%;">
+    <script>
+      let webview = document.createElement('webview');
+
+      webview.setAttribute('src', `https://www.youtube.com/tv#/search${window.location.search}`);
+      webview.setAttribute('useragent', 'Mozilla/5.0 (Linux; Tizen 2.3) AppleWebKit/538.1 (KHTML, like Gecko)Version/2.3 TV Safari/538.1');
+      webview.style = 'position:absolute;width:100%;height:100%;';
+      document.body.appendChild(webview);
+
+      // TODO: Figure out how to make the first result auto-play.
+    </script>
+  </body>
+</html>
