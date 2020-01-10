@@ -4,12 +4,13 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "nodemon --watch src/ --exec \"electron .\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^4.2.4"
+    "electron": "^4.2.4",
+    "nodemon": "^2.0.2"
   },
   "dependencies": {
     "electron-widevinecdm": "./lib/electron-widevinecdm",
