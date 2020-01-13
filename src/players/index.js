@@ -1,4 +1,4 @@
 module.exports = {
-    netflix: require('./netflix'),
-    youtube: require('./youtube'),
+  netflix: require('./netflix'),
+  youtube: require('./youtube'),
 };

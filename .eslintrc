@@ -1,0 +1,14 @@
+{
+    "extends": ["react-app", "airbnb", "plugin:jsx-a11y/recommended"],
+    "plugins": ["jsx-a11y"],
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "react/jsx-props-no-spreading": [0, { "extensions": [".js", ".jsx"] }],
+      "react/jsx-one-expression-per-line": [0, { "extensions": [".js", ".jsx"] }],
+      "react-hooks/exhaustive-deps": [0, { "extensions": [".js", ".jsx"] }],
+      "no-prototype-builtins": [0, { "extensions": [".js", ".jsx"] }],
+      "no-bitwise": [0, { "extensions": [".js", ".jsx"] }],
+      "global-require": [0, { "extensions": [".js", ".jsx"] }],
+      "import/no-extraneous-dependencies": [0, { "files": ["tests/**/*"] }]
+    }
+}
