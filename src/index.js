@@ -54,7 +54,7 @@ app.get('/:player/play', (req, res) => {
     }
 
     player.play(content);
-    res.send(`Playing ${playerName} for ${content}`);
+    res.send(`Playing ${content} on ${playerName}`);
 });
 
 app.listen(port, () => console.log(`🛰   Satellite 5 is listening on port ${port}!`));
