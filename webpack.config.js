@@ -22,7 +22,7 @@ module.exports = {
             }
         }, {
             test: /\.css$/,
-            loader: ['style-loader', 'css-loader?importLoaders=1&sourceMap', 'postcss-loader']
+            loader: ['style-loader', 'css-loader', 'postcss-loader']
         }, {
             test: /\.(png|jpg|jpeg|gif|svg)$/,
             loader: 'file-loader?limit=8192&name=assets/[name].[ext]?[hash]'

@@ -1,7 +1,5 @@
-const electron = require('electron');
-
-const { app, BrowserWindow } = electron.app;
-require('./src/server');
+const { app, BrowserWindow } = require('electron');
+require('./app');
 
 const widevine = require('./lib/electron-widevinecdm/src/main');
 

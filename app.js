@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const players = require('./players');
+const players = require('./src/players');
 
 const app = express();
 const port = 3000;
