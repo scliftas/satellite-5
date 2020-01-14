@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/:player/open', (req, res) => {
     const playerName = req.params.player;
-    const player = players[playerName];
+    const player = players[playerName].src;
     
     if (player === undefined) {
         res.send(`Unable to find player: ${playerName}`);
@@ -22,7 +22,7 @@ app.get('/:player/open', (req, res) => {
 
 app.get('/:player/search', (req, res) => {
     const playerName = req.params.player;
-    const player = players[playerName];
+    const player = players[playerName].src;
     
     if (player === undefined) {
         res.send(`Unable to find player: ${playerName}`);
@@ -42,7 +42,7 @@ app.get('/:player/search', (req, res) => {
 
 app.get('/:player/play', (req, res) => {
     const playerName = req.params.player;
-    const player = players[playerName];
+    const player = players[playerName].src;
     
     if (player === undefined) {
         res.send(`Unable to find player: ${playerName}`);
