@@ -17,7 +17,7 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel-loader',
       options: {
-        presets: ['react', 'es2015'],
+        presets: ['@babel/preset-react', '@babel/preset-env'],
       },
     }, {
       test: /\.css$/,
@@ -37,4 +37,5 @@ module.exports = {
     ]),
   ],
   devtool: 'eval',
+  target: 'electron-main',
 };

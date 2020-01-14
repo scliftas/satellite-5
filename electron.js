@@ -11,7 +11,7 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     fullscreen: true,
     webPreferences: {
-      nodeIntegration: false,
+      nodeIntegration: true,
       enableRemoteModule: false,
       plugins: true,
       partition: 'persist:satellite-5',
