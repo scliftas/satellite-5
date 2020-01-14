@@ -833,7 +833,7 @@ eval("/**\n * Copyright 2013-present, Facebook, Inc.\n * All rights reserved.\n 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(7);\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Main = function Main() {\n  return _react2.default.createElement(\n    'p',\n    null,\n    'Hello World!'\n  );\n};\n\nexports.default = Main;\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/components/main.js\n// module id = 109\n// module chunks = 0\n\n//# sourceURL=webpack:///./src/components/main.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(7);\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Home = function Home() {\n  return _react2.default.createElement(\n    \"div\",\n    null,\n    _react2.default.createElement(\"img\", { src: \"/assets/icons/netflix.png\" })\n  );\n};\n\nexports.default = Home;\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/pages/home.js\n// module id = 109\n// module chunks = 0\n\n//# sourceURL=webpack:///./src/pages/home.js?");
 
 /***/ }),
 /* 110 */
@@ -1725,7 +1725,7 @@ eval("/*\r\n\tMIT License http://www.opensource.org/licenses/mit-license.php\r\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(7);\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(110);\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _reactRouter = __webpack_require__(111);\n\nvar _main = __webpack_require__(109);\n\nvar _main2 = _interopRequireDefault(_main);\n\n__webpack_require__(112);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(_react2.default.createElement(\n  _reactRouter.Router,\n  { history: _reactRouter.hashHistory, onUpdate: function onUpdate() {\n      return window.scrollTo(0, 0);\n    } },\n  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _main2.default })\n), document.getElementById('app'));\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/index.js\n// module id = 237\n// module chunks = 0\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\nvar _react = __webpack_require__(7);\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(110);\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _reactRouter = __webpack_require__(111);\n\nvar _home = __webpack_require__(109);\n\nvar _home2 = _interopRequireDefault(_home);\n\n__webpack_require__(112);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_reactDom2.default.render(_react2.default.createElement(\n  _reactRouter.Router,\n  { history: _reactRouter.hashHistory, onUpdate: function onUpdate() {\n      return window.scrollTo(0, 0);\n    } },\n  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _home2.default })\n), document.getElementById('app'));\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/index.js\n// module id = 237\n// module chunks = 0\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 /******/ ]);
