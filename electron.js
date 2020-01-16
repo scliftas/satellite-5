@@ -1,3 +1,4 @@
+require('@babel/polyfill');
 const { app, BrowserWindow } = require('electron');
 require('./app');
 

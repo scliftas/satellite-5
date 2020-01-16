@@ -15,5 +15,7 @@ module.exports = {
     width: ['responsive', 'hover', 'focus'],
     height: ['responsive', 'hover', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-transitions')(),
+  ],
 };

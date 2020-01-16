@@ -5,7 +5,7 @@ import * as players from '../players';
 const PlayerList = () => {
   const icons = Object.keys(players).map((key) => {
     const player = players[key];
-    return <Player config={player} />;
+    return <Player name={player.name} logo={player.logo} />;
   });
 
   return (
