@@ -1,13 +1,13 @@
 const window = require('../../window');
 
+const userAgent = 'Mozilla/5.0 (Linux; Tizen 2.3) AppleWebKit/538.1 (KHTML, like Gecko)Version/2.3 TV Safari/538.1';
+
 const open = () => {
-  window().loadURL('https://www.youtube.com/tv#/');
+  window().loadURL('https://www.youtube.com/tv#/', { userAgent });
 };
 
 const search = (content) => {
-  window().loadURL(`https://www.youtube.com/tv#/search?resume&q=${content}`, {
-    userAgent: 'Mozilla/5.0 (Linux; Tizen 2.3) AppleWebKit/538.1 (KHTML, like Gecko)Version/2.3 TV Safari/538.1',
-  });
+  window().loadURL(`https://www.youtube.com/tv#/search?resume&q=${content}`, { userAgent });
 };
 
 const play = (content) => {
